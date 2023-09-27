@@ -1,112 +1,8 @@
-import 'dart:async';
-
 import 'package:flutter/material.dart';
 
 void main() {
   runApp(const MyApp());
 }
-
-// class Cat extends Object{
-//   final String name;
-//   Cat(this.name);
-//   // factory Cat.fluffBall() => Cat('Fluff Ball');
-//   @override bool operator == (covariant Cat other) => other.name == name;
-//   @override int get hashCode => name.hashCode;
-// }
-
-// void test() {
-//   final cat1 = Cat('Fluff Ball');
-//   final cat2 = Cat('Fluff Ball');
-//   cat1 == cat2 ? print('They are equal') : print('They are not equal');
-// }
-
-
-// class Cat {
-//   final String name;
-//   Cat(this.name);
-// }
-
-// extension Run on Cat {
-//   void run() => print('$name is running');
-// }
-
-// class Person {
-//   final String firstName;
-//   final String lastName;
-//   Person(this.firstName, this.lastName);
-// }
-
-// extension FullName on Person {
-//   String get fullName => '$firstName $lastName';
-// }
-
-// void test() {
-//   final cat = Cat('Fluff Ball');
-//   cat.run();
-//   final person = Person('John', 'Doe');
-//   print(person.fullName);
-// }
-
-// String multipliedByTwo(int a) => (a * 2).toString();
-
-
-// Delaying the execution of a function
-// Future<int> heavyFutureThatMultipliesByTwo(int a) {
-//   return Future.delayed(const Duration(seconds: 2), () { return a * 2; });
-// }
-
-// void test() async {
-//   final result = await heavyFutureThatMultipliesByTwo(2);
-//   print(result);
-// }
-
-// Stream<String> getName() {
-//   return Stream.periodic(const Duration(seconds: 1), (int i) {
-//     return 'Name $i';
-//   });
-// }
-
-// void test() async {
-//   await for (final name in getName()) {
-//     print(name);
-//   }
-// }
-
-// sync* is a generator function that returns an Iterable object that can be iterated using a for loop.
-// Iterable<int> getOneTwoThree() sync* {
-//   yield 1;
-//   yield 2;
-//   yield 3;
-// }
-
-// void test() async {
-//   for (final number in getOneTwoThree()) {
-//     print(number);
-//   }
-// }
-
-// class PairOfStrings {
-//   final String first;
-//   final String second;
-//   PairOfStrings(this.first, this.second);
-// }
-
-// class PairOfIntegers {
-//   final int first;
-//   final int second;
-//   PairOfIntegers(this.first, this.second);
-// }
-
-// class Pair<A, B> {
-//   final A first;
-//   final B second;
-//   Pair(this.first, this.second);
-// }
-
-// void test() {
-//   final pairOfStrings = Pair<String, String>('first', 'second');
-//   pairOfStrings.first;
-// }
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
@@ -114,7 +10,6 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    // test();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(

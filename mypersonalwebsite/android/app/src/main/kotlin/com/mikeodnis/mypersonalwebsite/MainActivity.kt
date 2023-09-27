@@ -1,0 +1,6 @@
+package com.mikeodnis.mypersonalwebsite
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
